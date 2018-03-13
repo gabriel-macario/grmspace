@@ -1,0 +1,888 @@
+<!doctype html>	
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	
+    <title>Verb Conjugations</title>
+  </head>
+  <body>
+	<div class = "container">
+		<div class="jumbotron mb-0" id="resc-jumbo">
+			<h1 class="display-4">Verb Conjugations</h1>
+		</div>
+		<div class="card" id="introCard">
+			<div class="card-header" id="introHeader">
+				<h5 class="mb-0">
+					<button class="btn btn-link pl-0 ml-0" data-toggle="collapse" data-target="#intro" aria-expanded="true" aria-controls="introHeader">
+						<h3>Introduction</h3>
+					</button>
+				</h5>
+			</div>
+			<div id="intro" class="collapse show" aria-labelledby="introHeader">
+				<div class="card-body">
+					<p>In Filipino (at least in FIL002) there are 4 main verb conjugations (all based off of a given root word):</p>
+					
+					<ul>
+						<li>Infinitive (<em>Neutral</em>)</li>
+						<li>Past Tense (<em>Perpektibo</em>)</li>
+						<li>Present Tense (<em>Imperpektibo</em>)</li>
+						<li>Future Tense (<em>Kontemplatibo</em>)</li>
+					</ul>
+					
+					<p><em>Note: The infinitive form of a verb is also used to give a command (e.g. "You, sit!")</em></p>
+					
+					<p>All verbs also have some sort of prefix, infix, or suffix. The rules for conjugating a verb (or for making a root word into a verb) are dependent on what prefix/infix/suffix is being used.</p>
+					
+					<p><em>Note: Not every prefix/infix/suffix can be used for every root word; knowing which root words work with which prefix/infix/suffix is a matter of knowledge and experience</em></p>
+				</div>
+				<div class="text-right">
+					<small><em><a href="#" id="closeIntro" data-toggle="collapse" data-target="#intro" aria-expanded="false" aria-controls="closeIntro">Close 'Introduction'</a></em></small>
+				</div>
+			</div>
+		</div>
+		<div class="card" id="umVerbsCard">
+			<div class="card-header" id="umVerbsHeader">
+				<h5 class="mb-0">
+					<button class="btn btn-link pl-0 ml-0" data-toggle="collapse" data-target="#umVerbs" aria-expanded="true" aria-controls="umVerbsHeader">
+						<h3>-<em>Um</em>- Verbs</h3>
+					</button>
+				</h5>
+			</div>
+			<div id="umVerbs" class="collapse" aria-labelledby="umVerbsHeader">
+				<div class="card-body">
+					<p>The rules for <em>um</em>- verbs are fairly straight forward and (like all verbs) are built off the root word:</p>
+					<div class="card" id="umRulesConCard">
+						<div class="card-header bg-white text-center" id="umRulesConHeader">
+								<a data-toggle="collapse" href="#umRulesCon" aria-expanded="false" aria-controls="umRulesCon">
+									-<em>Um</em>- Verbs Rules (Consonant Root Example)
+								</a>
+						</div>
+						<div class="collapse show" id="umRulesCon">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-responsive mb-0">
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">Rule</th>
+											<th scope="col">Example</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Root</th>
+											<td>N/A</td>
+											<td><em>takbo</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Infinitive</th>
+											<td><em><b style="color: red">um</b></em> before first vowel of root</td>
+											<td><em>t<b style="color: red">um</b>akbo</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Past</th>
+											<td><em><b style="color: red">um</b></em> before first vowel of root</td>
+											<td><em>t<b style="color: red">um</b>akbo</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Present</th>
+											<td><b style="color: green">first two syllables of infinitive</b> + root</td>
+											<td><em><b style="color: green">tuma</b>takbo</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Future</th>
+											<td><b style="color: purple">first syllable of root</b> + root</td>
+											<td><em><b style="color: purple">ta</b>takbo</em></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<p class="mt-4">It is worth noting that with -<em>um</em>- verbs, both the infinitive/command and the past conjugation are exactly the same, so the only way to tell which conjugation is being used in a sentence is through context</p>
+					
+					<p>The conjugation rules for -<em>um</em>- remain the same regardless of whether or not the root word begins with a vowel:</p>
+					<div class="card" id="umRulesVowCard">
+						<div class="card-header bg-white text-center" id="umRulesVowHeader">
+								<a data-toggle="collapse" href="#umRulesVow" aria-expanded="false" aria-controls="umRulesVow">
+									-<em>Um</em>- Verbs Rules (Vowel Root Example)
+								</a>
+						</div>
+						<div class="collapse show" id="umRulesVow">
+							<div class="card-body p-0">				
+								<table class="table table-bordered table-responsive mb-0">
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">Rule</th>
+											<th scope="col">Example</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Root</th>
+											<td>N/A</td>
+											<td><em>inom</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Infinitive</th>
+											<td><em><b style="color: red">um</b></em> before first vowel of root</td>
+											<td><em><b style="color: red">um</b>inom</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Past</th>
+											<td><em><b style="color: red">um</b></em> before first vowel of root</td>
+											<td><em><b style="color: red">um</b>inom</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Present</th>
+											<td><b style="color: green">first two syllables of infinitive</b> + root</td>
+											<td><em><b style="color: green">umi</b>inom</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Future</th>
+											<td><b style="color: purple">first syllable of root</b> + root</td>
+											<td><em><b style="color: purple">i</b>inom</em></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+								
+						</div>
+					</div>
+					
+					<p class="mt-4">As seen, there is nothing particularly complicated about -<em>um</em>- verbs; the pattern is uniform throughout all root words. Just remember that when a Filipino root word starts with a vowel, the first syllable of the root word (which is repeated in the future tense of -<em>um</em>- conjugations) is made up of only that vowel (e.g. <em>iinom</em> or <em>uupo</em>).</p>
+					
+					<!--
+					<p>Below is a table of -<em>um</em>- verb conjugations (taken from the instructor's <a href="https://drive.google.com/open?id=1hV2uwvFn6lhZdWIfOKT9dXK_rQJIRdJ0">iLearn document</a>) for futher examples:</p>
+					<div class="card">
+						<div class="card-header bg-white text-center" id="umExamplesHeader">
+								<a data-toggle="collapse" href="#umExamples" aria-expanded="false" aria-controls="umExamples">
+									Table of Example -<em>Um</em>- Verbs
+								</a>
+						</div>
+						<div class="collapse" id="umExamples">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-responsive table-sm table-striped mb-0">
+									<thead>
+										<tr>
+											<th scope="col">Root</th>
+											<th scope="col">Infinitive</th>
+											<th scope="col">Past</th>
+											<th scope="col">Present</th>
+											<th scope="col">Future</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>langoy</td>
+											<td>lumangoy</td>
+											<td>lumangoy</td>
+											<td>lumalangoy</td>
+											<td>lalangoy</td>
+										</tr>
+										<tr>
+											<td>bili</td>
+											<td>bumili</td>
+											<td>bumili</td>
+											<td>bumibili</td>
+											<td>bibili</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+								
+						</div>
+					</div>
+				</div>
+				-->
+				</div>
+				<div class="text-right">
+					<small><em><a href="#" id="closeUmVerbs" data-toggle="collapse" data-target="#umVerbs" aria-expanded="false" aria-controls="closeUmVerbs">Close '-Um- Verbs'</a></em></small>
+				</div>
+			</div>
+		</div>
+		<div class="card" id="maMagVerbsCard">
+			<div class="card-header" id="maMagVerbsHeader">
+				<h5 class="mb-0">
+					<button class="btn btn-link pl-0 ml-0" data-toggle="collapse" data-target="#maMagVerbs" aria-expanded="true" aria-controls="maMagHeader">
+						<h3><em>Ma</em>- & <em>Mag</em>- Verbs</h3>
+					</button>
+				</h5>
+			</div>
+			<div id="maMagVerbs" class="collapse" aria-labelledby="maMagVerbsHeader">
+				<div class="card-body">
+					<p>The <em>ma</em>- prefix can denote the ability/capability to do something. For example, when combined with the root word <em>sulat</em> (write), we arrive at <em>masulat</em> (can write).</p>
+					
+					<p><em>Note: This is not always the case for verbs with the ma- prefix. Like many other things, knowing which ma- verbs denote the ability to do something is a matter of knowledge and experience.</em></p>
+					
+					<p>The conjugation rules for <em>ma</em>- verbs fairly straight forward:</p>
+					
+					<div class="card" id="maRulesConCard">
+						<div class="card-header bg-white text-center" id="maRulesConHeader">
+								<a data-toggle="collapse" href="#maRulesCon" aria-expanded="false" aria-controls="maRulesCon">
+									<em>Ma</em>- Verbs Rules (Consonant Root Example)
+								</a>
+						</div>
+						<div class="collapse show" id="maRulesCon">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-responsive mb-0">
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">Rule</th>
+											<th scope="col">Example</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Root</th>
+											<td>N/A</td>
+											<td><em>ligo</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Infinitive</th>
+											<td><em><b style="color: red">ma</b></em> + root</td>
+											<td><em><b style="color: red">ma</b>ligo</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Past</th>
+											<td><em><b style="color: green">na</b></em> + root</td>
+											<td><em><b style="color: green">na</b>ligo</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Present</th>
+											<td><em><b style="color: green">na</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: green">na</b><b style="color: purple">li</b>ligo</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Future</th>
+											<td><em><b style="color: red">ma</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: red">ma</b><b style="color: purple">li</b>ligo</em></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<p class="mt-4">The rules for <em>ma</em>- conjugations remain the same even if the root word starts with a vowel:</p>
+					
+					<div class="card" id="maRulesVowCard">
+						<div class="card-header bg-white text-center" id="maRulesVowHeader">
+								<a data-toggle="collapse" href="#maRulesVow" aria-expanded="false" aria-controls="maRulesVow">
+									<em>Ma</em>- Verbs Rules (Vowel Root Example)
+								</a>
+						</div>
+						<div class="collapse show" id="maRulesVow">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-responsive mb-0">
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">Rule</th>
+											<th scope="col">Example</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Root</th>
+											<td>N/A</td>
+											<td><em>iwan</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Infinitive</th>
+											<td><em><b style="color: red">ma</b></em> + root</td>
+											<td><em><b style="color: red">ma</b>iwan</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Past</th>
+											<td><em><b style="color: green">na</b></em> + root</td>
+											<td><em><b style="color: green">na</b>iwan</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Present</th>
+											<td><em><b style="color: green">na</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: green">na</b><b style="color: purple">i</b>iwan</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Future</th>
+											<td><em><b style="color: red">ma</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: red">ma</b><b style="color: purple">i</b>iwan</em></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<p class="mt-4">Notice how the the infitive and the past conjugations are the same except for the first letter (m and n respectively). Similarly, the present and the future conjugations are also the same except for the first letter (n and m respectively). This <b>m/n/n/m pattern</b> can be found in several other verb prefixes that start with m. Just remember that the present and future have that repeated syllable.</p>
+					
+					<p><em>Note: If you're having a hard time figuring out what syllable repeats, syllables (at least in the context of verb conjugations) usually end in a vowel.</em></p>
+					
+					<p>The <em>mag</em>- prefix follows the same <b>m/n/n/m pattern</b> of the <em>ma</em>- prefix, though there is a slight difference depending on whether or not the root word starts with a vowel. For the sake of simplicity, we'll start with a root word that starts with a consonant:</p>
+					
+					<div class="card" id="magRulesConCard">
+						<div class="card-header bg-white text-center" id="magRulesConHeader">
+								<a data-toggle="collapse" href="#magRulesCon" aria-expanded="false" aria-controls="magRulesCon">
+									<em>Mag</em>- Verbs Rules (Consonant Root)
+								</a>
+						</div>
+						<div class="collapse show" id="magRulesCon">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-responsive mb-0">
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">Rule</th>
+											<th scope="col">Example</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Root</th>
+											<td>N/A</td>
+											<td><em>linis</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Infinitive</th>
+											<td><em><b style="color: red">mag</b></em> + root</td>
+											<td><em><b style="color: red">mag</b>linis</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Past</th>
+											<td><em><b style="color: green">nag</b></em> + root</td>
+											<td><em><b style="color: green">nag</b>linis</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Present</th>
+											<td><em><b style="color: green">nag</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: green">nag</b><b style="color: purple">li</b>linis</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Future</th>
+											<td><em><b style="color: red">mag</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: red">mag</b><b style="color: purple">li</b>linis</em></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+								
+						</div>
+					</div>
+					
+					<p class="mt-4">When the root word of a <em>mag</em>- verb starts with a vowel, then a '-' (dash) must be added after the '<em>mag</em>' (or '<em>nag</em>'):</p>
+					
+					<div class="card" id="magRulesVowCard">
+						<div class="card-header bg-white text-center" id="magRulesVowHeader">
+								<a data-toggle="collapse" href="#magRulesVow" aria-expanded="false" aria-controls="magRulesVow">
+									<em>Mag</em>- Verbs Rules (Vowel Root)
+								</a>
+						</div>
+						<div class="collapse show" id="magRulesVow">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-responsive mb-0">
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">Rule</th>
+											<th scope="col">Example</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Root</th>
+											<td>N/A</td>
+											<td><em>aral</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Infinitive</th>
+											<td><em><b style="color: red">mag-</b></em> + root</td>
+											<td><em><b style="color: red">mag-</b>aral</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Past</th>
+											<td><em><b style="color: green">nag-</b></em> + root</td>
+											<td><em><b style="color: green">nag-</b>aral</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Present</th>
+											<td><em><b style="color: green">nag-</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: green">nag-</b><b style="color: purple">a</b>aral</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Future</th>
+											<td><em><b style="color: red">mag-</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: red">mag-</b><b style="color: purple">a</b>aral</em></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+								
+						</div>
+					</div>
+				</div>
+				<div class="text-right">
+					<small><em><a href="#" id="closeMaMagVerbs" data-toggle="collapse" data-target="#maMagVerbs" aria-expanded="false" aria-controls="closeMaMagVerbs">Close 'Ma- & Mag- Verbs'</a></em></small>
+				</div>
+			</div>
+		</div>
+		<div class="card" id="mangManMamCard">
+			<div class="card-header" id="mangManMamHeader">
+				<h5 class="mb-0">
+					<button class="btn btn-link pl-0 ml-0" data-toggle="collapse" data-target="#mangManMamVerbs" aria-expanded="true" aria-controls="mangManMamHeader">
+						<h3><em>Mang</em>/<em>Man</em>/<em>Mam</em>- Verbs</h3>
+					</button>
+				</h5>
+			</div>
+			<div id="mangManMamVerbs" class="collapse" aria-labelledby="mangManMamVerbsHeader">
+				<div class="card-body">
+					<p>It helps to think of the <em>mang/man/mam</em>- verbs as a family of verbs, with the <em>mang</em>- prefix serving as the parent while <em>man/mam</em>- prefixes are the children that come out to play sometimes.</p>
+					
+					<p>The <em>mang</em>- prefix should be used whenever the root word starts with any letter except for 'd', 'l', 'r', 's', 't', 'b', or 'p'. In a majority of cases, when the root word starts with a consonant that is <em>not</em> k, <em>mang</em>- verbs follow the <b>m/n/n/m pattern</b>:</p>
+					
+					<div class="card" id="mangRulesConNoKCard">
+						<div class="card-header bg-white text-center" id="maRulesConNoKHeader">
+								<a data-toggle="collapse" href="#mangRulesConNoK" aria-expanded="false" aria-controls="mangRulesConNoK">
+									<em>Mang</em>- Verbs Rules (Consonant Not 'K')
+								</a>
+						</div>
+						<div class="collapse show" id="mangRulesConNoK">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-responsive mb-0">
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">Rule</th>
+											<th scope="col">Example</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Root</th>
+											<td>N/A</td>
+											<td><em>gamot</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Infinitive</th>
+											<td><em><b style="color: red">mang</b></em> + root</td>
+											<td><em><b style="color: red">mang</b>gamot</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Past</th>
+											<td><em><b style="color: green">nang</b></em> + root</td>
+											<td><em><b style="color: green">nang</b>gamot</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Present</th>
+											<td><em><b style="color: green">nang</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: green">nang</b><b style="color: purple">ga</b>gamot</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Future</th>
+											<td><em><b style="color: red">mang</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: red">mang</b><b style="color: purple">ga</b>gamot</em></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<p class="mt-4">When the root word for a <em>mang</em>- verb does start with k, the <em>mang</em>- prefix assimilates the k. This means that the last letter of the prefix (remember that <em>ng</em> is one letter in Filipino), devours the k and takes it spot, creating what can be thought of as an 'assimilated root.' This slightly alters the rules of conjugation: </p>
+					
+					<div class="card" id="mangRulesAssimilatedConCard">
+						<div class="card-header bg-white text-center" id="mangRulesAssimilatedConHeader">
+								<a data-toggle="collapse" href="#mangRulesAssimilatedCon" aria-expanded="false" aria-controls="mangRulesAssimilatedCon">
+									<em>Mang</em>- Verbs Rules (Assimilated 'K')
+								</a>
+						</div>
+						<div class="collapse show" id="mangRulesAssimilatedCon">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-responsive mb-0">
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">Rule</th>
+											<th scope="col">Example</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Root</th>
+											<td>N/A</td>
+											<td><em>kuha</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Assimilated Root</th>
+											<td><b style="color: darkblue">last letter of prefix</b> + root word without first letter</td> 
+											<td><em><b style="color: darkblue">ng</b>uha</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Infinitive</th>
+											<td><em><b style="color: red">ma</b></em> + assimilated root</td>
+											<td><em><b style="color: red">ma</b>nguha</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Past</th>
+											<td><em><b style="color: green">na</b></em> + assimilated root</td>
+											<td><em><b style="color: green">na</b>nguha</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Present</th>
+											<td><em><b style="color: green">na</b></em> + <em><b style="color: purple">first syllable of assimilated root</b></em> + assimilated root</td>
+											<td><em><b style="color: green">na</b><b style="color: purple">ngu</b>nguha</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Future</th>
+											<td><em><b style="color: green">ma</b></em> + <em><b style="color: purple">first syllable of assimilated root</b></em> + assimilated root</td>
+											<td><em><b style="color: green">ma</b><b style="color: purple">ngu</b>nguha</em></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+					</div>
+					
+					<p class="mt-4"><em>Note: According to the instructor, it's not only 'k' that gets assimilated by mang-; however, she could not give any examples off of a non-'k' root getting assimilated off the top of her head.</em></p>
+					
+					<p>If you're having difficulty with figuring out the first syllable of the assimilated root, you can instead think of it as the second syllable of the infinitive/past. For example, if the infinitive form is <em>ma<u>ngu</u>ha</em>, the syllable to repeat is '<em>ngu</em>', meaning that the present tense is <em>na<u>ngu</u>nguha</em> and that the future tense is <em>ma<u>ngu</u>nguha</em>.</p>
+					
+					<p>Fortunately, vowels are never assimilated by <em>mang</em>-. Unfortunately, the rules for root words that start with vowels aren't very straight straight forward</p>
+
+					Similar to <em>mag</em>- verbs, you occasionly put a '-' (dash). Root words that start with an 'a' usually have a dash (<em>mangako</em> being the one exception that the instructor could provide), and root words that start with an 'i' or a 'u' usually don't have a dash. The instructor could not provide examples of what occurs when the root word starts with an 'e' or 'o'.</p>
+					
+					<p>When the root word for a <em>mang</em> verb starts with a vowel and requires a dash, the conjugation rules follow the <b>m/n/n/m pattern</b>:</p>
+					
+					<div class="card" id="mangRulesVowDashCard">
+						<div class="card-header bg-white text-center" id="mangRulesVowDashHeader">
+								<a data-toggle="collapse" href="#mangRulesVowDash" aria-expanded="false" aria-controls="mangRulesVowDash">
+									<em>Mang</em>- Verbs Rules (Vowel with Dash)
+								</a>
+						</div>
+						<div class="collapse show" id="mangRulesVowDash">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-responsive mb-0">
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">Rule</th>
+											<th scope="col">Example</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Root</th>
+											<td>N/A</td>
+											<td><em>agaw</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Infinitive</th>
+											<td><em><b style="color: red">mang-</b></em> + root</td>
+											<td><em><b style="color: red">mang-</b>agaw</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Past</th>
+											<td><em><b style="color: green">nang-</b></em> + root</td>
+											<td><em><b style="color: green">nang-</b>agaw</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Present</th>
+											<td><em><b style="color: green">nang-</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: green">nang-</b><b style="color: purple">a</b>agaw</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Future</th>
+											<td><em><b style="color: red">mang-</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: red">mang-</b><b style="color: purple">a</b>agaw</em></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<p class="mt-4">When the root word for a <em>mang</em> verb starts with a vowel and does not require a dash, the conjugation rules follow a slightly altered m/n/n/m pattern:</p>
+					
+					<div class="card" id="mangRulesVowNoDashCard">
+						<div class="card-header bg-white text-center" id="mangRulesVowNoDashHeader">
+								<a data-toggle="collapse" href="#mangRulesVowNoDash" aria-expanded="false" aria-controls="mangRulesVowNoDash">
+									<em>Mang</em>- Verbs Rules (Vowel Root, No Dash)
+								</a>
+						</div>
+						<div class="collapse show" id="mangRulesVowNoDash">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-sm mb-0">
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">Rule</th>
+											<th scope="col">Example</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Root</th>
+											<td>N/A</td>
+											<td><em>isda</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Infinitive</th>
+											<td><em><b style="color: red">mang</b></em> + root</td>
+											<td><em><b style="color: red">mang</b>isda</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Past</th>
+											<td><em><b style="color: green">nang</b></em> + root</td>
+											<td><em><b style="color: green">nang</b>isda</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Present</th>
+											<td><em><b style="color: green">nang</b></em> + <em><b style="color: purple">first letter of root with -ng added</b></em> + root</td>
+											<td><em><b style="color: green">nang</b><b style="color: purple">ing</b>isda</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Future</th>
+											<td><em><b style="color: red">mang</b></em> + <em><b style="color: purple">first letter of root with -ng added</b></em> + root</td>
+											<td><em><b style="color: red">mang</b><b style="color: purple">ing</b>isda</em></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+								
+						</div>
+					</div>
+					
+					<p class="mt-4">Now, for reasons that may or may not be sensible, when the root word starts with a 'd', 'l', 'r', 's', or 't', the <em>mang-</em> prefix turns into the <em>man</em>- prefix. Root words that begin with 'd', 's', or 't', are commonly assimilated by the <em>man</em>- prefix. In those cases, the conjugations follow the <u>same</u> rules as when <em>mang</em>- assimilates a 'k' root word, except it's the <em>man</em>- that does the assimilation. This pattern can be thought of as the <b>m/n/n/m pattern with assimilation</b> For example:</p>
+					
+					<div class="card" id="manRulesAssimilatedCard">
+						<div class="card-header bg-white text-center" id="manRulesAssimilatedHeader">
+								<a data-toggle="collapse" href="#manRulesAssimilated" aria-expanded="false" aria-controls="manRulesAssimilated">
+									<em>Man</em>- Verbs Rules (Assimilated Root)
+								</a>
+						</div>
+						<div class="collapse show" id="manRulesAssimilated">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-responsive mb-0">
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">Rule</th>
+											<th scope="col">Example</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Root</th>
+											<td>N/A</td>
+											<td><em>dukot</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Assimilated Root</th>
+											<td><b style="color: darkblue">last letter of prefix</b> + root word without first letter</td> 
+											<td><em><b style="color: darkblue">n</b>ukot</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Infinitive</th>
+											<td><em><b style="color: red">ma</b></em> + assimilated root</td>
+											<td><em><b style="color: red">ma</b>nukot</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Past</th>
+											<td><em><b style="color: green">na</b></em> + assimilated root</td>
+											<td><em><b style="color: green">na</b>nukot</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Present</th>
+											<td><em><b style="color: green">na</b></em> + <em><b style="color: purple">first syllable of assimilated root</b></em> + assimilated root</td>
+											<td><em><b style="color: green">na</b><b style="color: purple">nu</b>nukot</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Future</th>
+											<td><em><b style="color: green">ma</b></em> + <em><b style="color: purple">first syllable of assimilated root</b></em> + assimilated root</td>
+											<td><em><b style="color: green">ma</b><b style="color: purple">nu</b>nukot</em></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+					</div>
+					
+					<p class="mt-4">When the <em>man</em>- prefix does not assimilate the root word (usually the case when the root word starts with 'l'), then it follows the <b>m/n/n/m pattern</b>:</p>
+					
+					<div class="card" id="manRulesNoAssimilationCard">
+						<div class="card-header bg-white text-center" id="manRulesNoAssimilationHeader">
+								<a data-toggle="collapse" href="manRulesNoAssimilation" aria-expanded="false" aria-controls="manRulesNoAssimilation">
+									<em>Man</em>- Verbs Rules (No Assimilation)
+								</a>
+						</div>
+						<div class="collapse show" id="manRulesNoAssimilation">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-responsive mb-0">
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">Rule</th>
+											<th scope="col">Example</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Root</th>
+											<td>N/A</td>
+											<td><em>ligaw</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Infinitive</th>
+											<td><em><b style="color: red">man</b></em> + root</td>
+											<td><em><b style="color: red">man</b>ligaw</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Past</th>
+											<td><em><b style="color: green">nan</b></em> + root</td>
+											<td><em><b style="color: green">nan</b>ligaw</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Present</th>
+											<td><em><b style="color: green">nan</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: green">nan</b><b style="color: purple">li</b>ligaw</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Future</th>
+											<td><em><b style="color: red">man</b></em> + <em><b style="color: purple">first syllable of root</b></em> + root</td>
+											<td><em><b style="color: red">man</b><b style="color: purple">li</b>ligaw</em></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<p class="mt-4"><em>Note: The instructor could not provide us of any examples of man- verbs whose root words start with 'r'.</em></p>
+					
+					<p>The <em>mang</em>- prefix turns into the <em>mam</em>- prefix when the root word starts with a 'b' or 'p'. We finally catch a break with the <em>mam</em>- prefix because so far, in every example given, the <em>mam</em>- always assimilates the 'b' or 'p', so it follows the <b>m/n/n/m pattern with assimilation</b>:</p>
+					
+					<div class="card" id="mamRulesCard">
+						<div class="card-header bg-white text-center" id="mamRulesHeader">
+								<a data-toggle="collapse" href="#mamRules" aria-expanded="false" aria-controls="mamRules">
+									<em>Mam</em>- Verbs Rules
+								</a>
+						</div>
+						<div class="collapse show" id="mamRules">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-responsive mb-0">
+									<thead>
+										<tr>
+											<th scope="col"></th>
+											<th scope="col">Rule</th>
+											<th scope="col">Example</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">Root</th>
+											<td>N/A</td>
+											<td><em>pitas</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Assimilated Root</th>
+											<td><b style="color: darkblue">last letter of prefix</b> + root word without first letter</td> 
+											<td><em><b style="color: darkblue">m</b>itas</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Infinitive</th>
+											<td><em><b style="color: red">ma</b></em> + assimilated root</td>
+											<td><em><b style="color: red">ma</b>mitas</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Past</th>
+											<td><em><b style="color: green">na</b></em> + assimilated root</td>
+											<td><em><b style="color: green">na</b>mitas</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Present</th>
+											<td><em><b style="color: green">na</b></em> + <em><b style="color: purple">first syllable of assimilated root</b></em> + assimilated root</td>
+											<td><em><b style="color: green">na</b><b style="color: purple">mi</b>mitas</em></td>
+										</tr>
+										<tr>
+											<th scope="row">Future</th>
+											<td><em><b style="color: green">ma</b></em> + <em><b style="color: purple">first syllable of assimilated root</b></em> + assimilated root</td>
+											<td><em><b style="color: green">ma</b><b style="color: purple">mi</b>mitas</em></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+					</div>
+				
+					<p class="mt-4">Here's a table of when and how to use the <em>mang/man/mam</em>- prefixes:</p>
+					
+					<div class="card" id="mangManMamTableCard">
+						<div class="card-header bg-white text-center" id="mangManMamTable">
+								<a data-toggle="collapse" href="#mangManMamTable" aria-expanded="false" aria-controls="mangManMamTable">
+									<em>Mang/Man/Mam</em>- Usages
+								</a>
+						</div>
+						<div class="collapse show" id="mangManMamTable">
+							<div class="card-body p-0">
+								<table class="table table-bordered table-responsive mb-0">
+									<thead>
+										<tr>
+											<th scope="col">Prefix</th>
+											<th scope="col">When Root Word Starts With</th>
+											<th scope="col">Assimilates</th>
+											<th scope="col">Pattern (No Assimilation)</th>
+											<th scope="col">Pattern (With Assimilation)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row"><em>Mam</em>-</th>
+											<td>'b', 'p'</td>
+											<td>'b', 'p'</td>
+											<td>N/A (always assimilates)</td>
+											<td><a href="#mamRulesCard">m/n/n/m pattern with assimilation</a></td>
+										</tr>
+										<tr>
+											<th scope="row"><em>Man</em>-</th>
+											<td>'d', 'l', 's', 'r', 't'</td>
+											<td>'d', 's', 't'</td>
+											<td><a href="#manRulesNoAssimilationCard">m/n/n/m pattern no assimilation</td>
+											<td><a href="#manRulesAssimilatedCard">m/n/n/m pattern with assimilation</a></td>
+										</tr>
+										<tr>
+											<th scope="row"><em>Mang</em>-</th>
+											<td>'All other letters</td>
+											<td>'k'</td>
+											<td>Varies (<a href="#mangRulesConNoKCard">1</a>, <a href="#mangRulesVowDashCard">2</a>, <a href="#mangRulesVowNoDashCard">3</a>)</td>
+											<td><a href="#mangRulesAssimilatedConCard">m/n/n/m pattern with assimilation</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+				</div>
+				
+				<div class="text-right">
+					<small><em><a href="#" id="closeMangManMamVerbs" data-toggle="collapse" data-target="#mangManMamVerbs" aria-expanded="false" aria-controls="closeMangManMamVerbs">Close 'Mang/Man/Mam- Verbs'</a></em></small>
+				</div>
+			</div>
+		</div>
+		
+	
+	</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>
