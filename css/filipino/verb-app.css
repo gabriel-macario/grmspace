@@ -1,0 +1,49 @@
+tbody {
+  font-weight: 600;
+}
+
+.centered-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.correct {
+  background-color: #c1f0c1;
+  font-weight: 600;
+}
+
+.incorrect {
+  background-color: #ffabab;
+  font-weight: 600;
+}
+
+.no-answer {
+  background-color: #ffff7f;
+}
+
+.app-container {
+  border-left: 1px solid #868e96;
+}
+
+#dispContainer, #menuContainer {
+  border-top: 1px solid #868e96;
+  border-right: 1px solid #868e96;
+}
+
+#menuHeader {
+  font-weight: 600;
+}
+
+#numVerbs {
+  width: 50px;
+}
+
+/*#verbTable td {
+  padding: 0px;
+
+}*/
+
+#verbTable .form-control {
+  border: 0px;
+}

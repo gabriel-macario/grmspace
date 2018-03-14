@@ -1,0 +1,163 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Lato Font -->
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+		<!-- Custom CSS -->
+		<link rel = "stylesheet" type = "text/css" href = "https://www.grmspace.com/css/filipino/custom.css">
+
+    <!-- Verb App CSS -->
+    <link rel="stylesheet" type="text/css" href="https://www.grmspace.com/css/filipino/verb-app.css">
+
+
+		<title>Filipino Verb Conjugation App</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-white section" id="headNav">
+			<a class="navbar-brand" href="#"><h5>GRM Space | Filipino</h5></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav text-right">
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.grmspace.com/filipino">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.grmspace.com/filipino/g-drive">Google Drive</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.grmspace.com/filipino/quizlets">Quizlets</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.grmspace.com/filipino/write-ups">Write-Ups</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="https://www.grmspace.com/filipino/web-apps">Web Apps</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="jumbotron mb-0 jumbotron-fluid text-center side-borders py-5">
+				<div class="container">
+					<h1 class="display-3">Verb Conjugation App</h1>
+        </div>
+			</div>
+      <div class="app-container container">
+        <div class="row">
+          <div class="col-sm-auto p-2" id="menuContainer">
+            <h4 id="menuHeader" class="text-center mb-0">Menu</h4>
+            <form class="pt-0">
+              <fieldset id="verbSelect">
+                <legend class="col-form-label pb-0">Verb Affix(es):</legend>
+                <div class="form-check">
+                  <input class="form-check-input all-verb-toggle" type="checkbox" id="allVerbCheck" checked="true">
+                  <label class="form-check-label" for="allVerbCheck">Select All</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input all-verb-toggle" type="checkbox" id="umCheck" checked="true">
+                  <label class="form-check-label" for="umCheck">Um</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input all-verb-toggle" type="checkbox" id="magCheck" checked="true">
+                  <label class="form-check-label" for="magCheck">Mag</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input all-verb-toggle" type="checkbox" id="maCheck" checked="true">
+                  <label class="form-check-label" for="maCheck">Ma</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input all-verb-toggle" type="checkbox" id="mangCheck" checked="true">
+                  <label class="form-check-label" for="mangCheck">Mang</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input all-verb-toggle" type="checkbox" id="manCheck" checked="true">
+                  <label class="form-check-label" for="manCheck">Man</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input all-verb-toggle" type="checkbox" id="mamCheck" checked="true">
+                  <label class="form-check-label" for="mamCheck">Mam</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input all-verb-toggle" type="checkbox" id="inCheck" checked="true">
+                  <label class="form-check-label" for="inCheck">In/Hin</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input all-verb-toggle" type="checkbox" id="anCheck" checked="true">
+                  <label class="form-check-label" for="anCheck">An/Han</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input all-verb-toggle" type="checkbox" id="iCheck" checked="true">
+                  <label class="form-check-label" for="iCheck">I</label>
+                </div>
+
+              <small id="verbSelectHelp" class="form-text text-muted mt-0">At Least One Must Be Checked</small>
+              </fieldset>
+              <fieldset id="formatSelect">
+                <legend class="col-form-label pb-0">Format:</legend>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="formatRadios" id="tableRadio" value="tableFormat" checked="true">
+                  <label class="form-check-label" for="tableRadio">Verb Table</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="formatRadios" id="timeRadio" value="timeFormat">
+                  <label class="form-check-label" for="timeRadio">Time Elements</label>
+                </div>
+              </fieldset>
+              <fieldset id="conjTimeSelect" class="d-none ">
+                <legend class="col-form-label pb-0 ">Verb Conjugations<br/>As Time Elements?</legend>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="verbTimeRadios" id="yesConjTimeRadio" value="yesConjTime" checked="false">
+                  <label class="form-check-label" for="yesConjTimeRadio">Yes</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="verbTimeRadios" id="noConjTimeRadio" value="noConjTime" checked="true">
+                  <label class="form-check-label" for="noConjTimeRadio">No</label>
+                </div>
+              </fieldset>
+              <div class="form-inline mt-3">
+                <label for="numVerb mr-5">Number:</label>
+                <input type="number" class="form-control form-control-sm text-right ml-3" id="numVerbs" min="1" value="5">
+              </div>
+              <small id="numVerbsHelp" class="form-text text-muted">Must be at Least 1</small>
+              <button type="button" class="btn btn-primary mt-3" id="gen">Generate</button>
+              <small id="genBtnHelp" class="form-text text-muted"></small>
+            </form>
+          </div>
+
+          <div class="col p-2"  id="dispContainer">
+            <!---->
+            <div id="disp">
+              <h1 id="dispPrompt" class="display-4 text-center">Use Menu to Customize Problems</h1>
+            </div>
+            <div id="btnDisp" class="text-right d-none">
+              <button type="button" class="btn btn-warning" id="clearAnswers">Clear All</button>
+              <button type="button" class="btn btn-secondary" id="new">Generate New</button>
+              <button type="button" class="btn btn-info" id="show">Show All</button>
+              <button type="button" class="btn btn-primary" id="check">Check All</button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end of app-container -->
+		</div>
+		<div id="footer" class="d-flex justify-content-end pr-2" style="background-color: #e9ecef">&copy; 2018</div>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://www.grmspace.com/js/verb-app.js"></script>
+
+  </body>
+</html>
