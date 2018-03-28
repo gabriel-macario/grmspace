@@ -19,7 +19,6 @@ body {
 	flex-shrink: 0;
 	border-top: 1px solid #868e96;
 	background-color: #e9ecef
-	justify-content: flex-end;
 }
 
 .navbar {
