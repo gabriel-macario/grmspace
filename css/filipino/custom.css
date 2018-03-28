@@ -7,10 +7,6 @@ body {
 	flex-direction: column;
 }
 
-#footer {
-	border-top: 1px solid #868e96;
-}
-
 .content {
 	flex: 1 0 auto;
 }
