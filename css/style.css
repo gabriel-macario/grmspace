@@ -1,20 +1,7 @@
-html, body {
-	height: 100%;
-}
-
-body {
-	display: flex;
-	flex-direction: column;
-}
-
-.content {
-	flex: 1 0 auto;
-}
-
 .footer {
-	flex-shrink: 0;
 	border-top: 1px solid #868e96;
-	background-color: #e9ecef
+	background-color: #e9ecef;
+	margin-top: -1px;
 }
 
 .img-64x64-px {
@@ -22,9 +9,6 @@ body {
 	width: 64px;
 }
 
-.navbar {
-	flex: 1 0 auto;
-}
 .navbar-brand {
 	font-family: 'Lato', sans-serif;
 }
@@ -40,4 +24,30 @@ body {
 
 .social-btn {
 	text-decoration: none !important;
+}
+
+
+@media (min-width: 768px) {
+
+	html, body {
+		height: 100%;
+	}
+
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content {
+		flex: 1 0 auto;
+	}
+
+	.footer {
+		flex-shrink: 0;
+	}
+
+	.navbar {
+		min-height: 50px;
+		max-height: 50px
+	}
 }
