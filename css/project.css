@@ -1,0 +1,39 @@
+  .project-item {
+    min-height: 150px;
+    position: relative;
+  }
+
+  .project-tags {
+    display: none;
+    width: 100%;
+  }
+
+  .project-img {
+    border-radius: 15%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .project-img:hover {
+    opacity: 0.5;
+  }
+
+  .project-link:hover + .project-tags, .project-tags:hover {
+    top: 87.5%;
+    display: block;
+    font-weight: 500;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .project-title {
+    margin-bottom: 0px;
+  }
+
+  .bg-light-2nd {
+    background-color: #f6ebdc;
+  }
+
+  h5 {
+    margin-bottom: 0px;
+  }

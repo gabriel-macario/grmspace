@@ -1,6 +1,5 @@
 .footer {
-	border-top: 1px solid #868e96;
-	background-color: #e9ecef;
+	border-top: 1px solid #343758;
 	margin-top: -1px;
 }
 
@@ -14,12 +13,12 @@
 }
 
 .section {
-	border-bottom: 1px solid #868e96;
+	border-bottom: 1px solid #343758;
 }
 
 .side-borders {
-	border-right: 1px solid #868e96;
-	border-left: 1px solid #868e96;
+	border-right: 1px solid #343758;
+	border-left: 1px solid #343758;
 }
 
 .social-btn {

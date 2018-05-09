@@ -1,0 +1,10 @@
+
+  #status-list a {
+    color: white;
+    font-weight: 500;
+  }
+
+  #status-list a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
