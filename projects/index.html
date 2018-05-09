@@ -1,5 +1,4 @@
-
-<!doctype html>
+	<!doctype html>
 <html lang="en">
 	<head>
 		<!-- Required meta tags -->
@@ -8,11 +7,52 @@
 		<!-- Lato Font -->
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-
-		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="C:\Users\admin\Downloads\hackerthemes-executive-suite\executive-suite\css\bootstrap4-executive-suite.css">
+			<!-- Custom CSS -->
 		<link rel="stylesheet" type="text/css" href ="https://www.grmspace.com/css/style.css">
+
+
+		<!-- TODO: Link style sheet for project -->
+		<style>
+			.project-item {
+				min-height: 150px;
+				position: relative;
+			}
+
+			.project-tags {
+				display: none;
+				width: 100%;
+			}
+
+			.project-img {
+				border-radius: 15%;
+				margin-bottom: 5px;
+				margin-top: 5px;
+			}
+
+			.project-img:hover {
+				opacity: 0.5;
+			}
+
+			.project-link:hover + .project-tags, .project-tags:hover {
+				bottom: 0;
+				display: block;
+				position: absolute;
+				z-index: 1;
+			}
+
+			.project-title {
+				margin-bottom: 0px;
+			}
+
+			.bg-light-2nd {
+				background-color: #f6ebdc;
+			}
+
+			h5 {
+				margin-bottom: 0px;
+			}
+		</style>
 
 		<title>GRM Space</title>
 	</head>
@@ -24,11 +64,11 @@
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 				<ul class="navbar-nav text-right">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a class="nav-link" href="https://www.grmspace.com/">Home <span class="sr-only">(current)</span></a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Projects</a>
+					<li class="nav-item active">
+						<a class="nav-link" href="https://www.grmspace.com/projects">Projects</a>
 					<li class="nav-item">
 						<a class="nav-link" href="#">About</a>
 					</li>
@@ -37,39 +77,100 @@
 		</nav>
 
 		<div class="container content">
-			<div class="jumbotron mb-0 jumbotron-fluid text-center section side-borders py-4">
-				<h1>I'm Gabe.</h1>
-				<p class="lead mb-0">Bootstrap developer and improving programmer.</p>
-				<div>
-					<a class="btn btn-dark disabled mt-2" href="#" role="button">Projects</a>
-					<a class="btn btn-dark disabled mt-2" href="#" role="button">About</a>
-				</div>
-				<div>
-					<a class="btn btn-dark mt-2" href="https://github.com/gabriel-macario" target="_blank">GitHub</a>
-					<a class="btn btn-dark mt-2" href="https://codepen.io/gmaca001" target="_blank">CodePen</a>
-				</div>
-
-				<hr>
-				<p>You might be looking for this:</p>
-				<a class="btn btn-dark" href="https://www.grmspace.com/filipino" role="button">FIL Resources</a>
+			<div class="jumbotron mb-0 jumbotron-fluid text-center bg-dark py-4 text-white">
+				<h1>Projects</h1>
 			</div>
-			<div class="bg-white py-3 section side-borders">
-				<div class="container">
-					<h2 class="text-center">Status</h2>
-					<div class="row">
-						<div class="col-lg"></div>
-						<div class="col-lg-7">
-							<ul>
-								<li>Developing: <a href="https://www.grmspace.com">www.grmspace.com</a></li>
-								<li>Learning: <a href="https://git-scm.com/" target="_blank">Git</a> & <a href="https://github.com" target="_blank">GitHub</a></li>
-								<li>Acquiring: Front End Development Certificate (<a href="https://www.freecodecamp.org/">Free Code Camp</a>)</li>
-								<li>Frequenting: <a href="https://app.codility.com/programmers/"  target="_blank">Codility</a>
-							</ul>
-						</div>
-						<div class="col-lg"></div>
+			<div class="row border-dark border-left border-right-0 mx-0">
+				<div class="col-lg-4 col-md-6 bg-l col-sm-12 px-0 project-item bg-light text-center border-bottom border-dark border-right">
+					<div class="project-title text-white bg-secondary">
+						<h5>Filipino Verb App</h5>
+					</div>
+					<a class="project-link" href="#">
+						<img class="mx-auto project-img" src="C:\Users\admin\Pictures\Web-Images\grmspace\verb-app_300x196.jpg" alt="Filipino Verb App"/>
+					</a>
+
+					<div class="project-tags bg-primary text-white text-center">
+						SPA, jQuery, Bootstrap, Educational
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 bg-l col-sm-12 px-0 project-item bg-light text-center border-bottom border-dark border-right">
+					<div class="project-title text-white bg-info">
+						<h5>Simon Game</h5>
+					</div>
+					<a class="project-link" href="#">
+						<img class="mx-auto project-img" src="C:\Users\admin\Pictures\Web-Images\grmspace\simon_300x196.jpg" alt="Simon Game"/>
+					</a>
+
+					<div class="project-tags bg-primary text-white text-center">
+						Game, jQuery, Javascript, Flexbox
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 bg-l col-sm-12 px-0 project-item bg-light text-center border-bottom border-dark border-right">
+					<div class="project-title text-white bg-secondary">
+						<h5>Tic-Tac-Toe</h5>
+					</div>
+					<a class="project-link" href="#">
+						<img class="mx-auto project-img" src="C:\Users\admin\Pictures\Web-Images\grmspace\tic-tac-toe_300x196.jpg" alt="Tic-Tac-Toe"/>
+					</a>
+
+					<div class="project-tags bg-primary text-white text-center">
+						Game, Multiplayer, Javascript
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 bg-l col-sm-12 px-0 project-item bg-light text-center border-bottom border-dark border-right">
+					<div class="project-title text-white bg-info">
+						<h5>The Metta Center</h5>
+					</div>
+					<a class="project-link" href="#">
+						<img class="mx-auto project-img" src="C:\Users\admin\Pictures\Web-Images\grmspace\the-metta-center_300x196.jpg" alt="Simon Game"/>
+					</a>
+
+					<div class="project-tags bg-primary text-white text-center">
+						Wordpress, CSS, HTML
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 bg-l col-sm-12 px-0 project-item bg-light text-center border-bottom border-dark border-right">
+					<div class="project-title text-white bg-secondary">
+						<h5>Online Calculator</h5>
+					</div>
+					<a class="project-link" href="#">
+						<img class="mx-auto project-img" src="C:\Users\admin\Pictures\Web-Images\grmspace\calculator_300x196.jpg" alt="Tic-Tac-Toe"/>
+					</a>
+
+					<div class="project-tags bg-primary text-white text-center">
+						Javascript, HTML, CSS, jQuery, Bootstrap
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 bg-l col-sm-12 px-0 project-item bg-light text-center border-bottom border-dark border-right">
+					<div class="project-title text-white bg-info">
+						<h5>Twitch Viewer</h5>
+					</div>
+					<a class="project-link" href="#">
+						<img class="mx-auto project-img" src="C:\Users\admin\Pictures\Web-Images\grmspace\twitch-viewer_300x196.jpg" alt="Simon Game"/>
+					</a>
+					<div class="project-tags bg-primary text-white text-center">
+						Bootstrap, jQuery, AJAX, Twitch API
 					</div>
 				</div>
 			</div>
+				<!-- <div class="bg-light py-3 section side-borders">
+					<div class="container">
+						<h2 class="text-center">Filipino Verb Conjugation Application</h2>
+						<div class="proj-img text-center">
+							<img class="mx-auto" src="https://codepen.io/gmaca001/pen/pLJvrr/image/small.png"/>
+						</div>
+						<div class="row">
+							<div class="col-lg"></div>
+							<div class="col-lg-8">
+								<dl class="row ">
+									<dt class="col-sm-2">Goal </dt>
+									<dd class="col-sm-10">Build a single-page application that allows students to reinforce a core concept.</dd>
+								</dl>
+							</div>
+							<div class="col-lg"></div>
+						</div>
+					</div>
+				</div> -->
 		</div>
 
 		<div class="footer pr-3">
