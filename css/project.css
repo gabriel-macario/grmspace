@@ -19,7 +19,7 @@
   }
 
   .project-link:hover + .project-tags, .project-tags:hover {
-    top: 87.5%;
+    bottom: 0;
     display: block;
     font-weight: 500;
     position: absolute;
@@ -34,6 +34,7 @@
     background-color: #f6ebdc;
   }
 
-  h5 {
+  .project-item h5 {
     margin-bottom: 0px;
+    margin-top: 10px;
   }
