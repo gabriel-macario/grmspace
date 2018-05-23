@@ -1,5 +1,9 @@
-.footer {
+.card-footer,.footer {
 	border-top: 1px solid #343758;
+	
+}
+
+.footer {
 	margin-top: -1px;
 }
 
